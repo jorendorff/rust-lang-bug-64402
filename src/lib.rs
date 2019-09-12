@@ -14,5 +14,6 @@ unsafe impl GlobalAlloc for MyAllocator {
 }
 
 #[global_allocator]
+#[used]
 pub static GLOBAL: MyAllocator = MyAllocator;
 
